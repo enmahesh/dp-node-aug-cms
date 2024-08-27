@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posting Form</title>
+</head>
+<body>
+    <h2 style="text-align: center; color: #333;">Create a Blog Post</h2>
+    <form action="/createBlog" method="post" style="width: 50%; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+        <!-- Title Input -->
+        <div style="margin-bottom: 15px;">
+            <label for="title" style="display: block; font-weight: bold; margin-bottom: 5px;">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter the title" required
+                   style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+
+        <!-- Subtitle Input -->
+        <div style="margin-bottom: 15px;">
+            <label for="subtitle" style="display: block; font-weight: bold; margin-bottom: 5px;">Subtitle:</label>
+            <input type="text" id="subtitle" name="subtitle" placeholder="Enter the subtitle" required
+                   style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+
+        <!-- Description Input -->
+        <div style="margin-bottom: 15px;">
+            <label for="description" style="display: block; font-weight: bold; margin-bottom: 5px;">Description:</label>
+            <textarea id="description" name="description" placeholder="Write your blog post here..." required
+                      style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; height: 150px;"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="text-align: center;">
+            <input type="submit" value="Post Blog" 
+                   style="padding: 10px 20px; background-color: #007BFF; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+        </div>
+    </form>
+</body>
+</html>
